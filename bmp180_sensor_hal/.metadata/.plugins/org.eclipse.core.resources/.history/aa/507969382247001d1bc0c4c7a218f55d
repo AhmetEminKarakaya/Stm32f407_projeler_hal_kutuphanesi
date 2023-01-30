@@ -1,0 +1,25 @@
+/*
+ * bmp180.c
+ *
+ *  Created on: Oct 8, 2022
+ *      Author: ahmet
+ */
+
+#include "bmp180.h"
+
+void BMP180_Init(){
+
+	if(HAL_I2C_IsDeviceReady(&hi2c1, BMP180_DEVICE_WRITE_REGISTER_ADDRESS, 1, 100000) != HAL_OK){
+		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);
+	}
+
+	BMP180_Get_Calibration_Value(){
+
+	}
+
+}
+
+void BMP180_Get_Calibration_Value(){
+
+	uint8_t callbuff[]
+}

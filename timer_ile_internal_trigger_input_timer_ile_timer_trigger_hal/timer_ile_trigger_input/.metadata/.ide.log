@@ -1,0 +1,12 @@
+2022-10-17 22:50:47,359 [INFO] Activator:177 - 
+
+
+2022-10-17 22:50:47,361 [INFO] Activator:178 - !SESSION log4j initialized
+2022-10-17 22:50:49,580 [ERROR] AnalyticsContext:980 - The ST intranet updater server is unknown: mcucrossselector.codex.cro.st.com
+2022-10-17 22:50:56,911 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Eki 17, 2022 10:50:56 ?S org.glassfish.grizzly.http.server.NetworkListener start
+2022-10-17 22:50:56,912 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] INFO: Started listener bound to [localhost:1595]
+2022-10-17 22:50:56,912 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2022-10-17 22:50:56,913 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Eki 17, 2022 10:50:56 ?S org.glassfish.grizzly.http.server.HttpServer start
+2022-10-17 22:50:56,914 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] INFO: [HttpServer] Started.
+2022-10-17 22:50:56,914 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2022-10-17 22:51:00,469 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 

@@ -1,0 +1,27 @@
+21:22:10 **** Incremental Build of configuration Debug for project 4x4keypad ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/4x4keypad.h:43:13: warning: 'Keypad4x4_FindPins_positions' declared 'static' but never defined [-Wunused-function]
+   43 | static void Keypad4x4_FindPins_positions(void);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/4x4keypad.h:45:13: warning: 'Keypad4x4_ChangeColomn' declared 'static' but never defined [-Wunused-function]
+   45 | static void Keypad4x4_ChangeColomn(uint8_t colNum_0_to_3);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "4x4keypad.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\stm32f407projeler\4x4keypad\4x4keypad\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="4x4keypad.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 4x4keypad.elf
+ 
+arm-none-eabi-size   4x4keypad.elf 
+arm-none-eabi-objdump -h -S  4x4keypad.elf  > "4x4keypad.list"
+arm-none-eabi-objcopy  -O binary  4x4keypad.elf  "4x4keypad.bin"
+   text	   data	    bss	    dec	    hex	filename
+   7604	     20	   1660	   9284	   2444	4x4keypad.elf
+Finished building: default.size.stdout
+ 
+Finished building: 4x4keypad.bin
+ 
+Finished building: 4x4keypad.list
+ 
+
+21:22:12 Build Finished. 0 errors, 2 warnings. (took 1s.903ms)
+

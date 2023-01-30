@@ -1,0 +1,20 @@
+21:43:11 **** Incremental Build of configuration Debug for project adc_degerokuma_hal ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "adc_degerokuma_hal.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\stm32f407projeler\adc_degerokuma_hal\adc_degerokuma_hal\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="adc_degerokuma_hal.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: adc_degerokuma_hal.elf
+ 
+arm-none-eabi-size   adc_degerokuma_hal.elf 
+arm-none-eabi-objdump -h -S  adc_degerokuma_hal.elf  > "adc_degerokuma_hal.list"
+arm-none-eabi-objcopy  -O binary  adc_degerokuma_hal.elf  "adc_degerokuma_hal.bin"
+   text	   data	    bss	    dec	    hex	filename
+   8064	     20	   1644	   9728	   2600	adc_degerokuma_hal.elf
+Finished building: default.size.stdout
+ 
+Finished building: adc_degerokuma_hal.bin
+ 
+Finished building: adc_degerokuma_hal.list
+ 
+
+21:43:12 Build Finished. 0 errors, 0 warnings. (took 707ms)
+

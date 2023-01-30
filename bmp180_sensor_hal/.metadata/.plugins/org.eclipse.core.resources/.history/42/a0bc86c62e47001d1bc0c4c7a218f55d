@@ -1,0 +1,65 @@
+/*
+ * bmp180.c
+ *
+ *  Created on: Oct 8, 2022
+ *      Author: ahmet
+ */
+
+#include "bmp180.h"
+
+void BMP180_Init(){
+
+	if(HAL_I2C_IsDeviceReady(&hi2c1, BMP180_DEVICE_WRITE_REGISTER_ADDRESS, 1, 100000) != HAL_OK){
+		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);
+	}
+
+	BMP180_Get_Calibration_Value();
+
+}
+
+void BMP180_Get_Calibration_Value(){
+
+	int a=0;
+
+	uint8_t callbuff[BMP180_CALIBRATION_VALUE_LENGTH] = {0};
+
+	HAL_I2C_Mem_Read(&hi2c1, BMP180_DEVICE_READ_REGISTER_ADDRESS, BMP180_DEVICE_CALIBRATION_START_ADDRESS, 1, callbuff, BMP180_CALIBRATION_VALUE_LENGTH, 100000);
+
+
+	AC1 = (int16_t)callbuff[a] << 8 | callbuff[a+1]; a+=2;
+	AC2 = (int16_t)callbuff[a] << 8 | callbuff[a+1]; a+=2;
+	AC3 = (int16_t)callbuff[a] << 8 | callbuff[a+1]; a+=2;
+	AC4 = (int16_t)callbuff[a] << 8 | callbuff[a+1]; a+=2;
+	AC5 = (int16_t)callbuff[a] << 8 | callbuff[a+1]; a+=2;
+	AC6 = (int16_t)callbuff[a] << 8 | callbuff[a+1]; a+=2;
+	B1 =  (int16_t)callbuff[a] << 8 | callbuff[a+1]; a+=2;
+	B2 =  (int16_t)callbuff[a] << 8 | callbuff[a+1]; a+=2;
+	MB =  (int16_t)callbuff[a] << 8 | callbuff[a+1]; a+=2;
+	MC =  (int16_t)callbuff[a] << 8 | callbuff[a+1]; a+=2;
+	MD =  (int16_t)callbuff[a] << 8 | callbuff[a+1]; a+=2;
+}
+
+void BMP180_Get_Temperature(){
+
+}
+
+void BMP180_Get_Uncompansated_Temperature(){
+
+	uint8_t wData[1];
+	wData[0] = 0x2E;
+	uint8_t rData[2] = {0};
+
+	HAL_I2C_Mem_Write(&hi2c1, BMP180_DEVICE_WRITE_REGISTER_ADDRESS, 0xF4, 1, wData, 1, 100000);
+	HAL_Delay(5);
+
+	HAL_I2C_Mem_Read(&hi2c1, BMP180_DEVICE_READ_REGISTER_ADDRESS, 0xF6, 1, rData, 2, 100000);
+	unCompTemperature = (int16_t)((rData[0]<<8) | rData[1]);
+
+}
+
+
+
+
+
+
+

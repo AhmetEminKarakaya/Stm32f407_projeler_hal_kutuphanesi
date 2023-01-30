@@ -1,0 +1,307 @@
+20:03:45 **** Build of configuration Debug for project 4x4keypad ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f407vgtx.d" -MT"Core/Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f407vgtx.o" "../Core/Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Core/Src/4x4keypad.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/4x4keypad.d" -MT"Core/Src/4x4keypad.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/4x4keypad.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+arm-none-eabi-gcc -o "4x4keypad.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\stm32f407projeler\4x4keypad\4x4keypad\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="4x4keypad.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 4x4keypad.elf
+ 
+arm-none-eabi-size   4x4keypad.elf 
+arm-none-eabi-objdump -h -S  4x4keypad.elf  > "4x4keypad.list"
+arm-none-eabi-objcopy  -O binary  4x4keypad.elf  "4x4keypad.bin"
+   text	   data	    bss	    dec	    hex	filename
+   5776	     20	   1572	   7368	   1cc8	4x4keypad.elf
+Finished building: default.size.stdout
+ 
+Finished building: 4x4keypad.bin
+ 
+Finished building: 4x4keypad.list
+ 
+20:06:52 **** Incremental Build of configuration Debug for project 4x4keypad ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:89:18: error: 'KeypadWiringStruct' undeclared (first use in this function)
+   89 |   Keypad4x4_Init(KeypadWiringStruct)
+      |                  ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:89:18: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:89:37: error: expected ';' before 'SystemClock_Config'
+   89 |   Keypad4x4_Init(KeypadWiringStruct)
+      |                                     ^
+      |                                     ;
+......
+   94 |   SystemClock_Config();
+      |   ~~~~~~~~~~~~~~~~~~                 
+../Core/Src/main.c:68:22: warning: variable 'my_keypad' set but not used [-Wunused-but-set-variable]
+   68 |  Keypad_WiresTypeDef my_keypad;
+      |                      ^~~~~~~~~
+In file included from ../Core/Src/main.c:24:
+../Core/Src/main.c: At top level:
+../Core/Inc/4x4keypad.h:43:13: warning: 'Keypad4x4_FindPins_positions' declared 'static' but never defined [-Wunused-function]
+   43 | static void Keypad4x4_FindPins_positions(void);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/4x4keypad.h:45:13: warning: 'Keypad4x4_ChangeColomn' declared 'static' but never defined [-Wunused-function]
+   45 | static void Keypad4x4_ChangeColomn(uint8_t colNum_0_to_3);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+20:09:00 **** Incremental Build of configuration Debug for project 4x4keypad ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/4x4keypad.h:43:13: warning: 'Keypad4x4_FindPins_positions' declared 'static' but never defined [-Wunused-function]
+   43 | static void Keypad4x4_FindPins_positions(void);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/4x4keypad.h:45:13: warning: 'Keypad4x4_ChangeColomn' declared 'static' but never defined [-Wunused-function]
+   45 | static void Keypad4x4_ChangeColomn(uint8_t colNum_0_to_3);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "4x4keypad.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\stm32f407projeler\4x4keypad\4x4keypad\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="4x4keypad.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 4x4keypad.elf
+ 
+arm-none-eabi-size   4x4keypad.elf 
+arm-none-eabi-objdump -h -S  4x4keypad.elf  > "4x4keypad.list"
+arm-none-eabi-objcopy  -O binary  4x4keypad.elf  "4x4keypad.bin"
+   text	   data	    bss	    dec	    hex	filename
+   6228	     20	   1620	   7868	   1ebc	4x4keypad.elf
+Finished building: default.size.stdout
+ 
+Finished building: 4x4keypad.bin
+Finished building: 4x4keypad.list
+ 
+ 
+20:11:35 **** Incremental Build of configuration Debug for project 4x4keypad ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:131:25: error: 'keys' undeclared (first use in this function); did you mean 'key'?
+  131 |    Keypad4x4_ReadKeypad(keys)
+      |                         ^~~~
+      |                         key
+../Core/Src/main.c:131:25: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:131:30: error: expected ';' before '}' token
+  131 |    Keypad4x4_ReadKeypad(keys)
+      |                              ^
+      |                              ;
+  132 | 
+  133 |   }
+      |   ~                           
+In file included from ../Core/Src/main.c:24:
+../Core/Src/main.c: At top level:
+../Core/Inc/4x4keypad.h:43:13: warning: 'Keypad4x4_FindPins_positions' declared 'static' but never defined [-Wunused-function]
+   43 | static void Keypad4x4_FindPins_positions(void);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/4x4keypad.h:45:13: warning: 'Keypad4x4_ChangeColomn' declared 'static' but never defined [-Wunused-function]
+   45 | static void Keypad4x4_ChangeColomn(uint8_t colNum_0_to_3);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+20:12:24 **** Incremental Build of configuration Debug for project 4x4keypad ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/4x4keypad.h:43:13: warning: 'Keypad4x4_FindPins_positions' declared 'static' but never defined [-Wunused-function]
+   43 | static void Keypad4x4_FindPins_positions(void);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/4x4keypad.h:45:13: warning: 'Keypad4x4_ChangeColomn' declared 'static' but never defined [-Wunused-function]
+   45 | static void Keypad4x4_ChangeColomn(uint8_t colNum_0_to_3);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "4x4keypad.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\stm32f407projeler\4x4keypad\4x4keypad\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="4x4keypad.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 4x4keypad.elf
+ 
+arm-none-eabi-size   4x4keypad.elf 
+arm-none-eabi-objdump -h -S  4x4keypad.elf  > "4x4keypad.list"
+arm-none-eabi-objcopy  -O binary  4x4keypad.elf  "4x4keypad.bin"
+   text	   data	    bss	    dec	    hex	filename
+   7380	     20	   1660	   9060	   2364	4x4keypad.elf
+Finished building: default.size.stdout
+ 
+Finished building: 4x4keypad.bin
+ 
+Finished building: 4x4keypad.list
+ 
+20:14:11 **** Incremental Build of configuration Debug for project 4x4keypad ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/4x4keypad.h:43:13: warning: 'Keypad4x4_FindPins_positions' declared 'static' but never defined [-Wunused-function]
+   43 | static void Keypad4x4_FindPins_positions(void);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/4x4keypad.h:45:13: warning: 'Keypad4x4_ChangeColomn' declared 'static' but never defined [-Wunused-function]
+   45 | static void Keypad4x4_ChangeColomn(uint8_t colNum_0_to_3);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "4x4keypad.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\stm32f407projeler\4x4keypad\4x4keypad\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="4x4keypad.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 4x4keypad.elf
+ 
+arm-none-eabi-size   4x4keypad.elf 
+arm-none-eabi-objdump -h -S  4x4keypad.elf  > "4x4keypad.list"
+arm-none-eabi-objcopy  -O binary  4x4keypad.elf  "4x4keypad.bin"
+   text	   data	    bss	    dec	    hex	filename
+   7604	     20	   1660	   9284	   2444	4x4keypad.elf
+Finished building: default.size.stdout
+ 
+Finished building: 4x4keypad.bin
+Finished building: 4x4keypad.list
+ 
+ 
+20:21:18 **** Incremental Build of configuration Debug for project 4x4keypad ****
+make -j8 all 
+arm-none-eabi-size   4x4keypad.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7604	     20	   1660	   9284	   2444	4x4keypad.elf
+Finished building: default.size.stdout
+ 
+20:28:36 **** Incremental Build of configuration Debug for project 4x4keypad ****
+make -j8 all 
+arm-none-eabi-size   4x4keypad.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7604	     20	   1660	   9284	   2444	4x4keypad.elf
+Finished building: default.size.stdout
+ 
+20:31:16 **** Incremental Build of configuration Debug for project 4x4keypad ****
+make -j8 all 
+arm-none-eabi-size   4x4keypad.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7604	     20	   1660	   9284	   2444	4x4keypad.elf
+Finished building: default.size.stdout
+ 
+20:32:05 **** Incremental Build of configuration Debug for project 4x4keypad ****
+make -j8 all 
+arm-none-eabi-size   4x4keypad.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7604	     20	   1660	   9284	   2444	4x4keypad.elf
+Finished building: default.size.stdout
+ 
+20:50:26 **** Incremental Build of configuration Debug for project 4x4keypad ****
+make -j8 all 
+arm-none-eabi-size   4x4keypad.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7604	     20	   1660	   9284	   2444	4x4keypad.elf
+Finished building: default.size.stdout
+ 
+20:54:28 **** Incremental Build of configuration Debug for project 4x4keypad ****
+make -j8 all 
+arm-none-eabi-size   4x4keypad.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7604	     20	   1660	   9284	   2444	4x4keypad.elf
+Finished building: default.size.stdout
+ 
+20:57:44 **** Incremental Build of configuration Debug for project 4x4keypad ****
+make -j8 all 
+arm-none-eabi-size   4x4keypad.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7604	     20	   1660	   9284	   2444	4x4keypad.elf
+Finished building: default.size.stdout
+ 
+21:00:41 **** Incremental Build of configuration Debug for project 4x4keypad ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/4x4keypad.h:43:13: warning: 'Keypad4x4_FindPins_positions' declared 'static' but never defined [-Wunused-function]
+   43 | static void Keypad4x4_FindPins_positions(void);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/4x4keypad.h:45:13: warning: 'Keypad4x4_ChangeColomn' declared 'static' but never defined [-Wunused-function]
+   45 | static void Keypad4x4_ChangeColomn(uint8_t colNum_0_to_3);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "4x4keypad.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\stm32f407projeler\4x4keypad\4x4keypad\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="4x4keypad.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 4x4keypad.elf
+ 
+arm-none-eabi-size   4x4keypad.elf 
+arm-none-eabi-objdump -h -S  4x4keypad.elf  > "4x4keypad.list"
+arm-none-eabi-objcopy  -O binary  4x4keypad.elf  "4x4keypad.bin"
+   text	   data	    bss	    dec	    hex	filename
+   7604	     20	   1660	   9284	   2444	4x4keypad.elf
+Finished building: default.size.stdout
+ 
+Finished building: 4x4keypad.bin
+Finished building: 4x4keypad.list
+ 
+ 
+21:02:11 **** Incremental Build of configuration Debug for project 4x4keypad ****
+make -j8 all 
+arm-none-eabi-size   4x4keypad.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7604	     20	   1660	   9284	   2444	4x4keypad.elf
+Finished building: default.size.stdout
+ 
+21:05:01 **** Incremental Build of configuration Debug for project 4x4keypad ****
+make -j8 all 
+arm-none-eabi-size   4x4keypad.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7604	     20	   1660	   9284	   2444	4x4keypad.elf
+Finished building: default.size.stdout
+ 
+21:05:49 **** Incremental Build of configuration Debug for project 4x4keypad ****
+make -j8 all 
+arm-none-eabi-size   4x4keypad.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7604	     20	   1660	   9284	   2444	4x4keypad.elf
+Finished building: default.size.stdout
+ 
+21:17:52 **** Incremental Build of configuration Debug for project 4x4keypad ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/4x4keypad.h:43:13: warning: 'Keypad4x4_FindPins_positions' declared 'static' but never defined [-Wunused-function]
+   43 | static void Keypad4x4_FindPins_positions(void);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/4x4keypad.h:45:13: warning: 'Keypad4x4_ChangeColomn' declared 'static' but never defined [-Wunused-function]
+   45 | static void Keypad4x4_ChangeColomn(uint8_t colNum_0_to_3);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "4x4keypad.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\stm32f407projeler\4x4keypad\4x4keypad\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="4x4keypad.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 4x4keypad.elf
+ 
+arm-none-eabi-size   4x4keypad.elf 
+arm-none-eabi-objdump -h -S  4x4keypad.elf  > "4x4keypad.list"
+arm-none-eabi-objcopy  -O binary  4x4keypad.elf  "4x4keypad.bin"
+   text	   data	    bss	    dec	    hex	filename
+   7604	     20	   1660	   9284	   2444	4x4keypad.elf
+Finished building: default.size.stdout
+ 
+Finished building: 4x4keypad.bin
+Finished building: 4x4keypad.list
+ 
+ 
+21:22:10 **** Incremental Build of configuration Debug for project 4x4keypad ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/4x4keypad.h:43:13: warning: 'Keypad4x4_FindPins_positions' declared 'static' but never defined [-Wunused-function]
+   43 | static void Keypad4x4_FindPins_positions(void);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/4x4keypad.h:45:13: warning: 'Keypad4x4_ChangeColomn' declared 'static' but never defined [-Wunused-function]
+   45 | static void Keypad4x4_ChangeColomn(uint8_t colNum_0_to_3);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "4x4keypad.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\stm32f407projeler\4x4keypad\4x4keypad\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="4x4keypad.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 4x4keypad.elf
+ 
+arm-none-eabi-size   4x4keypad.elf 
+arm-none-eabi-objdump -h -S  4x4keypad.elf  > "4x4keypad.list"
+arm-none-eabi-objcopy  -O binary  4x4keypad.elf  "4x4keypad.bin"
+   text	   data	    bss	    dec	    hex	filename
+   7604	     20	   1660	   9284	   2444	4x4keypad.elf
+Finished building: default.size.stdout
+ 
+Finished building: 4x4keypad.bin
+ 
+Finished building: 4x4keypad.list
+ 

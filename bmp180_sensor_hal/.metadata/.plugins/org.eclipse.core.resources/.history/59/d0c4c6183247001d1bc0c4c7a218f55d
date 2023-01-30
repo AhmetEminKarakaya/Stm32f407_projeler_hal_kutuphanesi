@@ -1,0 +1,115 @@
+/*
+ * bmp180.c
+ *
+ *  Created on: Oct 8, 2022
+ *      Author: ahmet
+ */
+
+#include "bmp180.h"
+
+void BMP180_Init(){
+
+	if(HAL_I2C_IsDeviceReady(&hi2c1, BMP180_DEVICE_WRITE_REGISTER_ADDRESS, 1, 100000) != HAL_OK){
+		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);
+	}
+
+	BMP180_Get_Calibration_Value();
+
+}
+
+void BMP180_Get_Calibration_Value(){
+
+	int a=0;
+
+	uint8_t callbuff[BMP180_CALIBRATION_VALUE_LENGTH] = {0};
+
+	HAL_I2C_Mem_Read(&hi2c1, BMP180_DEVICE_READ_REGISTER_ADDRESS, BMP180_DEVICE_CALIBRATION_START_ADDRESS, 1, callbuff, BMP180_CALIBRATION_VALUE_LENGTH, 100000);
+
+
+	AC1 = (int16_t)callbuff[a] << 8 | callbuff[a+1]; a+=2;
+	AC2 = (int16_t)callbuff[a] << 8 | callbuff[a+1]; a+=2;
+	AC3 = (int16_t)callbuff[a] << 8 | callbuff[a+1]; a+=2;
+	AC4 = (int16_t)callbuff[a] << 8 | callbuff[a+1]; a+=2;
+	AC5 = (int16_t)callbuff[a] << 8 | callbuff[a+1]; a+=2;
+	AC6 = (int16_t)callbuff[a] << 8 | callbuff[a+1]; a+=2;
+	B1 =  (int16_t)callbuff[a] << 8 | callbuff[a+1]; a+=2;
+	B2 =  (int16_t)callbuff[a] << 8 | callbuff[a+1]; a+=2;
+	MB =  (int16_t)callbuff[a] << 8 | callbuff[a+1]; a+=2;
+	MC =  (int16_t)callbuff[a] << 8 | callbuff[a+1]; a+=2;
+	MD =  (int16_t)callbuff[a] << 8 | callbuff[a+1]; a+=2;
+
+
+	if(AC1 == 0x0000  || AC1 == 0xFFFF){
+		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);
+	}
+	if(AC2 == 0x0000  || AC2 == 0xFFFF){
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);
+		}
+	if(AC3 == 0x0000  || AC3 == 0xFFFF){
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);
+		}
+	if(AC4 == 0x0000  || AC4 == 0xFFFF){
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);
+		}
+	if(AC5 == 0x0000  || AC5 == 0xFFFF){
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);
+		}
+	if(AC6 == 0x0000  || AC6 == 0xFFFF){
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);
+		}
+	if(B1 == 0x0000  || B1 == 0xFFFF){
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);
+		}
+	if(B2 == 0x0000  || B2 == 0xFFFF){
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);
+		}
+	if(MB == 0x0000  || MB == 0xFFFF){
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);
+		}
+	if(MC == 0x0000  || MC == 0xFFFF){
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);
+		}
+	if(MD == 0x0000  || MD == 0xFFFF){
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);
+		}
+
+
+
+}
+
+void BMP180_Get_Temperature(){
+
+	BMP180_Get_Calibration_Value();
+
+	tX1 = (((int32_t)unCompTemperature - (int32_t)AC6) * (int32_t)AC5) / 32768;
+	tX2 = ((int32_t)MC * 2048) / (tX1 + (int32_t)MD);
+
+	if(tX1 == 0 && MD ==0){
+		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);
+		while(1);
+	}
+
+	tB5 = tX1 + tX2;
+	Temperature = (float) (tB5 + 8) / 16 *0.1;
+}
+
+void BMP180_Get_Uncompansated_Temperature(){
+
+	uint8_t wData[1];
+	wData[0] = 0x2E;
+	uint8_t rData[2] = {0};
+
+	HAL_I2C_Mem_Write(&hi2c1, BMP180_DEVICE_WRITE_REGISTER_ADDRESS, 0xF4, 1, wData, 1, 100000);
+	HAL_Delay(5);
+
+	HAL_I2C_Mem_Read(&hi2c1, BMP180_DEVICE_READ_REGISTER_ADDRESS, 0xF6, 1, rData, 2, 100000);
+	unCompTemperature = (int16_t)((rData[0]<<8) | rData[1]);
+
+}
+
+
+
+
+
+
+

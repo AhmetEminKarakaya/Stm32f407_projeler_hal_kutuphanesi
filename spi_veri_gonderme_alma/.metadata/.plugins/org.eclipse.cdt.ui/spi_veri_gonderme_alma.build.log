@@ -1,0 +1,20 @@
+13:50:43 **** Incremental Build of configuration Debug for project spi_veri_gonderme_alma ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "spi_veri_gonderme_alma.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\stm32f407projeler\spi_veri_gonderme_alma\spi_veri_gonderme_alma\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="spi_veri_gonderme_alma.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: spi_veri_gonderme_alma.elf
+ 
+arm-none-eabi-size   spi_veri_gonderme_alma.elf 
+arm-none-eabi-objdump -h -S  spi_veri_gonderme_alma.elf  > "spi_veri_gonderme_alma.list"
+arm-none-eabi-objcopy  -O binary  spi_veri_gonderme_alma.elf  "spi_veri_gonderme_alma.bin"
+   text	   data	    bss	    dec	    hex	filename
+   7820	     20	   1748	   9588	   2574	spi_veri_gonderme_alma.elf
+Finished building: default.size.stdout
+ 
+Finished building: spi_veri_gonderme_alma.bin
+ 
+Finished building: spi_veri_gonderme_alma.list
+ 
+
+13:50:43 Build Finished. 0 errors, 0 warnings. (took 702ms)
+

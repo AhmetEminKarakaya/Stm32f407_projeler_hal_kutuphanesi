@@ -1,0 +1,10 @@
+00:43:42 **** Incremental Build of configuration Debug for project uart_ile_mesaj_gonderme_hal ****
+make -j8 all 
+arm-none-eabi-size   uart_ile_mesaj_gonderme_hal.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7620	     32	   1640	   9292	   244c	uart_ile_mesaj_gonderme_hal.elf
+Finished building: default.size.stdout
+ 
+
+00:43:43 Build Finished. 0 errors, 0 warnings. (took 280ms)
+

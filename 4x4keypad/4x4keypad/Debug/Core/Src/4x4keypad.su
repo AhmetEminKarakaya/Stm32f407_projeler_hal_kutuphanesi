@@ -1,0 +1,5 @@
+4x4keypad.c:31:6:Keypad4x4_Init	24	static
+4x4keypad.c:49:13:Keypad4x4_FindPins_positions	16	static
+4x4keypad.c:73:13:Keypad4x4_ChangeColomn	16	static
+4x4keypad.c:118:6:Keypad4x4_ReadKeypad	16	static
+4x4keypad.c:149:7:Keypad4x4_GetChar	16	static

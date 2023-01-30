@@ -1,0 +1,6 @@
+bmp180.c:10:6:BMP180_Init	8	static
+bmp180.c:20:6:BMP180_Get_Calibration_Value	56	static
+bmp180.c:80:6:BMP180_Get_Temperature	8	static
+bmp180.c:96:6:BMP180_Get_Uncompansated_Temperature	32	static
+bmp180.c:111:6:BMP180_Get_Presure	8	static
+bmp180.c:144:6:BMP180_Get_Uncompansated_Presure	32	static

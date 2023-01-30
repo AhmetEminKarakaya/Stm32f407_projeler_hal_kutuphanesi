@@ -1,0 +1,20 @@
+22:08:54 **** Incremental Build of configuration Debug for project dma_ile_adc_hal ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "dma_ile_adc_hal.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\stm32f407projeler\dma_ile_adc_hal\dma_ile_adc_hal\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="dma_ile_adc_hal.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: dma_ile_adc_hal.elf
+ 
+arm-none-eabi-size   dma_ile_adc_hal.elf 
+arm-none-eabi-objdump -h -S  dma_ile_adc_hal.elf  > "dma_ile_adc_hal.list"
+arm-none-eabi-objcopy  -O binary  dma_ile_adc_hal.elf  "dma_ile_adc_hal.bin"
+   text	   data	    bss	    dec	    hex	filename
+  10096	     20	   1740	  11856	   2e50	dma_ile_adc_hal.elf
+Finished building: default.size.stdout
+ 
+Finished building: dma_ile_adc_hal.bin
+ 
+Finished building: dma_ile_adc_hal.list
+ 
+
+22:08:55 Build Finished. 0 errors, 0 warnings. (took 826ms)
+

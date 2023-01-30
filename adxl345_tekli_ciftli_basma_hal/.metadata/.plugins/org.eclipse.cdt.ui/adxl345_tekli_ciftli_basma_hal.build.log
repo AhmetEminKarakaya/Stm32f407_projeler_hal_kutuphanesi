@@ -1,0 +1,20 @@
+20:52:53 **** Incremental Build of configuration Debug for project adxl345_tekli_ciftli_basma_hal ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "adxl345_tekli_ciftli_basma_hal.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\stm32f407projeler\adxl345_tekli_ciftli_basma_hal\adxl345_tekli_ciftli_basma_hal\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="adxl345_tekli_ciftli_basma_hal.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: adxl345_tekli_ciftli_basma_hal.elf
+ 
+arm-none-eabi-size   adxl345_tekli_ciftli_basma_hal.elf 
+arm-none-eabi-objdump -h -S  adxl345_tekli_ciftli_basma_hal.elf  > "adxl345_tekli_ciftli_basma_hal.list"
+arm-none-eabi-objcopy  -O binary  adxl345_tekli_ciftli_basma_hal.elf  "adxl345_tekli_ciftli_basma_hal.bin"
+   text	   data	    bss	    dec	    hex	filename
+   9292	     20	   1660	  10972	   2adc	adxl345_tekli_ciftli_basma_hal.elf
+Finished building: default.size.stdout
+ 
+Finished building: adxl345_tekli_ciftli_basma_hal.bin
+ 
+Finished building: adxl345_tekli_ciftli_basma_hal.list
+ 
+
+20:52:54 Build Finished. 0 errors, 0 warnings. (took 701ms)
+

@@ -1,0 +1,33 @@
+14:01:12 **** Incremental Build of configuration Debug for project hc_05_bluetooth_modul ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:54: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  116 |      HAL_UART_Transmit(&huart2, (uint8_t*)tx_buffer ,sprintf(tx_buffer ,"Ledler yandi\n"), 100);
+      |                                                      ^~~~~~~
+../Core/Src/main.c:116:54: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:25:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   24 | #include "stdbool.h"
+  +++ |+#include <stdio.h>
+   25 | /* USER CODE END Includes */
+../Core/Src/main.c:128:55: warning: incompatible implicit declaration of built-in function 'sprintf'
+  128 |       HAL_UART_Transmit(&huart2, (uint8_t*)tx_buffer ,sprintf(tx_buffer ,"Ledler sondu\n"), 100);
+      |                                                       ^~~~~~~
+../Core/Src/main.c:128:55: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+arm-none-eabi-gcc -o "hc_05_bluetooth_modul.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\stm32f407projeler\hc_05_bluetooth_modul\hc_05_bluetooth_modul\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hc_05_bluetooth_modul.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hc_05_bluetooth_modul.elf
+ 
+arm-none-eabi-size   hc_05_bluetooth_modul.elf 
+arm-none-eabi-objdump -h -S  hc_05_bluetooth_modul.elf  > "hc_05_bluetooth_modul.list"
+arm-none-eabi-objcopy  -O binary  hc_05_bluetooth_modul.elf  "hc_05_bluetooth_modul.bin"
+   text	   data	    bss	    dec	    hex	filename
+  10972	    120	   1800	  12892	   325c	hc_05_bluetooth_modul.elf
+Finished building: default.size.stdout
+ 
+Finished building: hc_05_bluetooth_modul.bin
+ 
+Finished building: hc_05_bluetooth_modul.list
+ 
+
+14:01:13 Build Finished. 0 errors, 3 warnings. (took 1s.8ms)
+
